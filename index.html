@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplitia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    width: 80%;
+    margin: 0 auto;
+    background-image: url("/banner.jpg");
+    background-size: cover;
+    text-align: center;    
+    color: #000000;
+}
+.header__details{
+    padding: 100px 0;
+}
+.header__heading{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 3.35px;
+}
+
+.header__paragraph--line{
+    display: inline-block;
+    background-color: #000000;
+    width: 1px;
+    height: 10px;
+    margin: 0 1.5px;
+}
+.header__paragraph{
+    font-size: 12px;
+}
+.header__link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+}
+.main{
+    padding: 65px 0;
+}
+.grid{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+
+}
+.grid__box{
+    /* background-color: yellow; */
+}
+.grid__box--image{
+   border: 5px solid #A8AAAD;
+   padding: 5px;
+   background-color: #ffffff;
+}
+.placeholder__image{
+    object-fit: cover;
+    width: 100%;
+}
+.grid__caption{
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+@media only screen and (max-width: 600px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+@media only screen and (max-width: 600px){
+    .header{
+        background-image: none;
+        background-color: #68C8C9;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+</style>
+</head>
+<body>
+   <header class="header">
+        <div class="header__details">
+            <h1 class="header__heading">NEW ARRIVAL</h1>
+        
+                <span class="header__paragraph--span1">
+                    <a href="#" class="header__link">
+                        HOME
+                    </a>
+                </span>
+                <div class="header__paragraph--line"></div>
+
+                <span class="header__paragraph--span2">
+                    <a href="#" class="header__link">
+                        NEW ARRIVAL
+                    </a>
+                </span>
+            
+        </div>
+   </header> 
+
+   <main class="main">
+       <div class="grid">
+           <!-- Box 1 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+            <!-- Box 2 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+           <!-- Box 3 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+           <!-- Box 4 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+           <!-- Box 5 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+           <!-- Box 6 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+           <!-- Box 7 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+           <!-- Box 8 -->
+        <figure class="grid__box">
+            <div class="grid__box--image">
+                <img src="/grid placeholder.jpg" alt="placeholder" class="placeholder__image">
+            </div>
+            <figcaption class="grid__caption">
+                Descript main place holder
+                <br>
+                Descript sub caption
+            </figcaption>
+          </figure>
+
+          
+       </div>
+   </main>
+</body>
+</html>
