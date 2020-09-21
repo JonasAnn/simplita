@@ -17,7 +17,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.header{
+.grid-banner{
     width: 80%;
     margin: 0 auto;
     background-image: url("/banner.jpg");
@@ -25,27 +25,27 @@ body{
     text-align: center;    
     color: #000000;
 }
-.header__details{
+.grid-banner__details{
     padding: 100px 0;
 }
-.header__heading{
+.grid-banner__heading{
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 3.35px;
 }
 
-.header__paragraph--line{
+.grid-banner__paragraph--line{
     display: inline-block;
     background-color: #000000;
     width: 1px;
     height: 10px;
     margin: 0 1.5px;
 }
-.header__paragraph{
+.grid-banner__paragraph{
     font-size: 12px;
 }
-.header__link{
+.grid-banner__link{
     text-decoration: none;
     color: #000000;
     font-size: 12px;
@@ -62,9 +62,7 @@ body{
     grid-row-gap: 80px;
 
 }
-.grid__box{
-    /* background-color: yellow; */
-}
+
 .grid__box--image{
    border: 5px solid #A8AAAD;
    padding: 5px;
@@ -88,7 +86,7 @@ body{
     }
     }
 @media only screen and (max-width: 600px){
-    .header{
+    .grid-banner{
         background-image: none;
         background-color: #68C8C9;
     }
@@ -99,25 +97,25 @@ body{
 </style>
 </head>
 <body>
-   <header class="header">
-        <div class="header__details">
-            <h1 class="header__heading">NEW ARRIVAL</h1>
+   <div class="grid-banner">
+        <div class="grid-banner__details">
+            <h1 class="grid-banner__heading">NEW ARRIVAL</h1>
         
-                <span class="header__paragraph--span1">
-                    <a href="#" class="header__link">
+                <span class="grid-banner__paragraph--span1">
+                    <a href="#" class="grid-banner__link">
                         HOME
                     </a>
                 </span>
-                <div class="header__paragraph--line"></div>
+                <div class="grid-banner__paragraph--line"></div>
 
-                <span class="header__paragraph--span2">
-                    <a href="#" class="header__link">
+                <span class="grid-banner__paragraph--span2">
+                    <a href="#" class="grid-banner__link">
                         NEW ARRIVAL
                     </a>
                 </span>
             
         </div>
-   </header> 
+    </div> 
 
    <main class="main">
        <div class="grid">
